@@ -1,28 +1,22 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Navbar from './components/Navbar';
-import Footer from './components/Footer';
-import Home from './pages/Home';
-import About from './pages/About';
-import Projects from './pages/Projects';
-import Contact from './pages/Contact';
-import './App.css'; // Import global styles
+import Header from './components/Header.js'
+import Hero from './components/Hero'
+import Skills from './components/Skills'
+import Projects from './pages/Projects.js'
+import Contact from './pages/Contact.js'
+import Footer from './components/Footer.js'
+import BackgroundAnimation from './components/BackgroundAnimation.js'
 
-function App() {
+export default function Home() {
   return (
-    <Router>
-      <Navbar />
-      <div className="main-content">
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-        </Routes>
-      </div>
+    <main className="min-h-screen bg-white text-gray-800">
+      <BackgroundAnimation />
+      <Header />
+      <Hero />
+      <Skills />
+      <Projects />
+      <Contact />
       <Footer />
-    </Router>
-  );
+    </main>
+  )
 }
 
-export default App;
