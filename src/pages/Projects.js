@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'E-commerce Website',
     description: 'A fully-featured e-commerce platform with advanced search, secure checkout, and real-time inventory updates.',
-    image: 'https://files.oaiusercontent.com/file-XFQqpQdDQrgnX4F78vZtnQ?se=2024-12-29T06%3A37%3A31Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Dd08fbd85-2e99-40b5-b2d1-90c439ce6eab.webp&sig=6TPSkTWgAjEDfXScxkDSYvnnT/U/QvSSWaUTfL/GcJo%3D',
+    image: 'https://cdn.discordapp.com/attachments/1181622574598340628/1322843424491044925/e-shop.jpg?ex=67725971&is=677107f1&hm=dfa9e8b7ae7cd2f4eae7c7d902b8ddcab1f2599dbfa2b5e7458cf47f47b9671a&',
     github: 'https://github.com/Hossam-Shehadeh/E-commerce',
     live: 'https://t-shoptask.onrender.com',
     technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Stripe API'],
@@ -24,7 +24,7 @@ const projects = [
   {
     title: 'Reading Club Server',
     description: 'A Node.js server for managing book club meetings, discussions, and user activities. Includes role-based access and real-time communication.',
-    image: 'https://files.oaiusercontent.com/file-HoEhabHgMS8ybvAomLiFDd?se=2024-12-29T06%3A37%3A39Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D3adf78a8-8012-4005-a719-97059adb6615.webp&sig=E9RJ/teEvHViE7rKSxqygFLGPFF8Be/zVPGr%2B1YgLrY%3D',
+    image: 'https://media.discordapp.net/attachments/1181622574598340628/1322843425158201400/reaging.jpg?ex=67725971&is=677107f1&hm=f1858adf99769c10f9b18f7d635245012e7843a51ca79a58873a321665c99028&=&format=webp&width=662&height=662',
     github: 'https://github.com/Hossam-Shehadeh/Reading-Club-Management-System',
     live: 'https://documenter.getpostman.com/view/30949616/2sA3e2gV9n',
     technologies: ['Node.js', 'Express.js', 'MongoDB', 'JWT'],
