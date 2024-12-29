@@ -2,10 +2,38 @@
 
 import { motion } from 'framer-motion'
 import { GitlabIcon as GitHub, Linkedin } from 'lucide-react'
+import { useState, useEffect } from 'react'
 
 const Hero = () => {
+  const [isMobile, setIsMobile] = useState(false)
+
+  // Check window size on mount and resize
+  useEffect(() => {
+    const checkScreenWidth = () => {
+      if (window.innerWidth < 500) {
+        setIsMobile(true)
+      } else {
+        setIsMobile(false)
+      }
+    }
+
+    // Initial check
+    checkScreenWidth()
+
+    // Add event listener for window resize
+    window.addEventListener('resize', checkScreenWidth)
+
+    // Cleanup event listener on unmount
+    return () => {
+      window.removeEventListener('resize', checkScreenWidth)
+    }
+  }, [])
+
   return (
-    <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-white to-blue-50">
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden bg-gradient-to-b from-white to-blue-50 "
+    >
       <div className="container mx-auto px-4 z-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -14,6 +42,8 @@ const Hero = () => {
           className="text-center"
         >
           <motion.h1
+            style={{ marginTop: isMobile ? '50px' : '0' }} // Apply 50px margin-top if screen width is less than 500px
+
             className="text-5xl md:text-7xl font-bold mb-4 text-gray-800"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -35,7 +65,7 @@ const Hero = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.6, duration: 0.8 }}
           >
-           I am a dedicated problem-solver with expertise in Full-Stack Development, AI-driven technologies, Business Analysis, and Python programming. I thrive on turning complex challenges into innovative and efficient solutions. With a strong foundation in analyzing business processes, I specialize in creating technical solutions that align seamlessly with organizational goals and deliver impactful results.
+            I am a dedicated problem-solver with expertise in Full-Stack Development, AI-driven technologies, Business Analysis, and Python programming. I thrive on turning complex challenges into innovative and efficient solutions. With a strong foundation in analyzing business processes, I specialize in creating technical solutions that align seamlessly with organizational goals and deliver impactful results.
           </motion.p>
           <motion.div
             className="flex justify-center space-x-6"
@@ -46,7 +76,6 @@ const Hero = () => {
             {[
               { Icon: GitHub, href: 'https://github.com/Hossam-Shehadeh' },
               { Icon: Linkedin, href: 'https://www.linkedin.com/in/hossam-shehadeh' },
-              // { Icon: Mail, href: 'mailto:john@example.com' },
             ].map(({ Icon, href }, index) => (
               <motion.a
                 key={href}
@@ -73,4 +102,3 @@ const Hero = () => {
 }
 
 export default Hero
-
