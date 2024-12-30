@@ -16,7 +16,7 @@ const projects = [
   {
     title: 'E-commerce Website',
     description: 'A fully-featured e-commerce platform with advanced search, secure checkout, and real-time inventory updates.',
-    image: 'https://cdn.discordapp.com/attachments/1181622574598340628/1322843424491044925/e-shop.jpg?ex=67725971&is=677107f1&hm=dfa9e8b7ae7cd2f4eae7c7d902b8ddcab1f2599dbfa2b5e7458cf47f47b9671a&',
+    image: '/e-shop.jpg',
     github: 'https://github.com/Hossam-Shehadeh/E-commerce',
     live: 'https://t-shoptask.onrender.com',
     technologies: ['React', 'Node.js', 'Express.js', 'MongoDB', 'Stripe API'],
@@ -24,7 +24,7 @@ const projects = [
   {
     title: 'Reading Club Server',
     description: 'A Node.js server for managing book club meetings, discussions, and user activities. Includes role-based access and real-time communication.',
-    image: 'https://media.discordapp.net/attachments/1181622574598340628/1322843425158201400/reaging.jpg?ex=67725971&is=677107f1&hm=f1858adf99769c10f9b18f7d635245012e7843a51ca79a58873a321665c99028&=&format=webp&width=662&height=662',
+    image: '/reaging.jpg',
     github: 'https://github.com/Hossam-Shehadeh/Reading-Club-Management-System',
     live: 'https://documenter.getpostman.com/view/30949616/2sA3e2gV9n',
     technologies: ['Node.js', 'Express.js', 'MongoDB', 'JWT'],
